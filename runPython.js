@@ -4,12 +4,12 @@ function scrape(){
     let options = { 
         mode: 'text', 
         pythonOptions: ['-u'],  
-          scriptPath: './', 
+          scriptPath: './python/', 
         // args: ['something'] //An argument which can be accessed in the script using sys.argv[1] 
     }; 
       
   
-    PythonShell.run('./scraper.py', options, function (err, result){ 
+    PythonShell.run('scraper.py', options, function (err, result){ 
           if (err) throw err; 
           // result is an array consisting of messages collected  
           //during execution of script. 
