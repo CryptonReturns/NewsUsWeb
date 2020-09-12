@@ -1,0 +1,31 @@
+{
+  "name": "newsusweb",
+  "version": "1.0.0",
+  "description": "A News App to give you your daily shot of current affairs.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js --scripts-prepend-node-path",
+    "server": "nodemon server.js --scripts-prepend-node-path" ,
+    "client": "npm start --prefix client --scripts-prepend-node-path",
+    "dev": "concurrently 'npm run server' 'npm run client' --scripts-prepend-node-path",
+    "client-install": "npm install --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryptonReturns/NewsUsWeb.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryptonReturns/NewsUsWeb/issues"
+  },
+  "homepage": "https://github.com/CryptonReturns/NewsUsWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
