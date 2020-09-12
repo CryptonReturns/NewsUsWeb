@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup 
 import requests 
+from summarize import getSummary
 topSportsNews = []
 
 listSite = "https://timesofindia.indiatimes.com/sports"
