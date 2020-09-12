@@ -7,7 +7,6 @@ import keys from "./firebaseAuth";
 import * as firebase from "firebase";
 
 firebase.initializeApp(keys);
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
