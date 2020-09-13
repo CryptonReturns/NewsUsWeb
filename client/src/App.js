@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import MainComponent from './Components/MainComponent.jsx'
+import React from "react";
+import "./App.css";
+import MainComponent from "./Components/MainComponent.jsx";
 
 function App() {
   return (
-    <div >
-        <MainComponent />
+    <div>
+      <MainComponent />
     </div>
   );
 }
