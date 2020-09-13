@@ -29,7 +29,9 @@ function NewsCard(props) {
               <CardText>{data.source}</CardText>
             </Col>
 
-            <Col sm={{ size: 3, offset: 3 }}>{data.url}See full article</Col>
+            <Col sm={{ size: 3, offset: 3 }}>
+              <a href={data.url}>See full article</a>
+            </Col>
           </Row>
         </Card>
       </Col>

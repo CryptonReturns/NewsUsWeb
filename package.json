@@ -9,13 +9,14 @@
     "server": "nodemon server.js --scripts-prepend-node-path",
     "client": "npm start --prefix client --scripts-prepend-node-path",
     "dev": "concurrently 'npm run server' 'npm run client' --scripts-prepend-node-path",
-    "client-install": "npm install --prefix client"
+    "client-install": "npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CryptonReturns/NewsUsWeb.git"
   },
-  "author": "",
+  "author": "CryptonReturns",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/CryptonReturns/NewsUsWeb/issues"
